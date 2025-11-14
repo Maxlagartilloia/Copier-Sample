@@ -103,7 +103,7 @@
 
         <a href="index.html" class="flex items-center space-x-3">
             <img src="https://i.postimg.cc/6qRNQd57/468963711-3994290450845859-6671631898219414239-n-removebg-preview.webp"
-                 class="h-24 md:h-32" alt="Copiermaster C&G">
+                 class="h-16 md:h-20 lg:h-24" alt="Copiermaster C&G">
         </a>
 
         <!-- Mobile -->
@@ -115,21 +115,22 @@
         </button>
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex space-x-6 items-center">
+        <div class="hidden md:flex space-x-4 lg:space-x-6 items-center">
             <a href="index.html" class="text-lime-500 font-semibold">Inicio</a>
             <a href="soluciones.html" class="hover:text-lime-500 font-semibold">Soluciones</a>
             <a href="nosotros.html" class="hover:text-lime-500 font-semibold">Nosotros</a>
             <a href="contacto.html" class="hover:text-lime-500 font-semibold">Contacto</a>
 
             <a href="soporte.html"
-               class="bg-lime-500 text-white px-5 py-2 rounded-full shadow-md hover:bg-lime-600">
+               class="bg-lime-500 text-white px-4 lg:px-5 py-2 rounded-full shadow-md hover:bg-lime-600 text-sm lg:text-base">
                 Soporte
             </a>
 
             <!-- Botón parpadeante al lado de Soporte -->
             <a href="https://botandlanding.crisslombeida.com/"
-               class="cta-landing blink-cta">
-                Páginas Web Profesionales
+               target="_blank" rel="noopener noreferrer"
+               class="cta-landing blink-cta text-xs lg:text-sm">
+                Diseño de Páginas Web Profesionales
             </a>
         </div>
     </div>
@@ -145,8 +146,9 @@
         </a>
         <!-- Botón parpadeante en móvil -->
         <a href="https://botandlanding.crisslombeida.com/"
+           target="_blank" rel="noopener noreferrer"
            class="block py-3 px-6 text-white bg-lime-500 text-center font-semibold blink-cta mt-2">
-            Páginas Web Profesionales
+            Diseño de Páginas Web Profesionales
         </a>
     </div>
 </nav>
@@ -163,26 +165,30 @@
 
     <div class="relative container mx-auto px-6 z-10 pb-16 flex-grow flex items-end">
         <div class="max-w-4xl">
+            <!-- Logo pequeño en el Hero -->
+            <img src="https://i.postimg.cc/6qRNQd57/468963711-3994290450845859-6671631898219414239-n-removebg-preview.webp"
+                 alt="Copiermaster C&G"
+                 class="h-12 md:h-16 mb-4 drop-shadow-lg">
 
-            <h1 id="hero-title" class="text-5xl font-extrabold mb-4"></h1>
-            <p id="hero-subtitle" class="text-lg text-gray-300 mb-6"></p>
+            <h1 id="hero-title" class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight"></h1>
+            <p id="hero-subtitle" class="text-base md:text-lg text-gray-300 mb-6 max-w-2xl"></p>
 
             <a href="soluciones.html"
-               class="bg-lime-500 text-white text-lg font-semibold px-10 py-4 rounded-full shadow-lg hover:bg-lime-600">
+               class="inline-block bg-lime-500 text-white text-base md:text-lg font-semibold px-8 md:px-10 py-3 md:py-4 rounded-full shadow-lg hover:bg-lime-600">
                Conoce Más
             </a>
         </div>
     </div>
 
     <!-- Hero Buttons -->
-    <div id="hero-buttons" class="relative bg-black bg-opacity-30 p-4 text-center">
-        <button data-index="0" class="hero-button px-4 py-2 rounded-lg text-white font-semibold">
+    <div id="hero-buttons" class="relative bg-black bg-opacity-30 p-4 text-center flex flex-wrap justify-center gap-2">
+        <button data-index="0" class="hero-button px-4 py-2 rounded-lg text-white font-semibold text-sm md:text-base">
             Copiermaster C&G
         </button>
-        <button data-index="1" class="hero-button px-4 py-2 rounded-lg text-white font-semibold">
+        <button data-index="1" class="hero-button px-4 py-2 rounded-lg text-white font-semibold text-sm md:text-base">
             Marcas
         </button>
-        <button data-index="2" class="hero-button px-4 py-2 rounded-lg text-white font-semibold">
+        <button data-index="2" class="hero-button px-4 py-2 rounded-lg text-white font-semibold text-sm md:text-base">
             Páginas Web
         </button>
     </div>
@@ -192,10 +198,12 @@
 <section class="py-20 bg-white">
     <div class="container mx-auto px-6">
         <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4 border-b-4 border-lime-500 inline-block pb-2">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 border-b-4 border-lime-500 inline-block pb-2">
                 Nuestras Soluciones de Outsourcing de Impresión
             </h2>
-            <p class="text-lg text-gray-600 mt-4">Diseñamos un ecosistema de impresión a la medida.</p>
+            <p class="text-base md:text-lg text-gray-600 mt-4">
+                Diseñamos un ecosistema de impresión a la medida de tus objetivos.
+            </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -204,7 +212,9 @@
                 <i data-lucide="printer" class="h-8 w-8 text-lime-500"></i>
                 <div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-2">Gestión de Flota</h3>
-                    <p class="text-gray-600">Equipos, consumibles y soporte todo incluido en un servicio predecible.</p>
+                    <p class="text-gray-600">
+                        Equipos, consumibles y soporte todo incluido en un servicio predecible.
+                    </p>
                 </div>
             </div>
 
@@ -212,7 +222,9 @@
                 <i data-lucide="file-scan" class="h-8 w-8 text-lime-500"></i>
                 <div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-2">Digitalización</h3>
-                    <p class="text-gray-600">Transforme sus archivos físicos en activos digitales seguros y accesibles.</p>
+                    <p class="text-gray-600">
+                        Transforme sus archivos físicos en activos digitales seguros y accesibles.
+                    </p>
                 </div>
             </div>
 
@@ -220,7 +232,9 @@
                 <i data-lucide="lock" class="h-8 w-8 text-lime-500"></i>
                 <div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-2">Impresión Segura</h3>
-                    <p class="text-gray-600">Autenticación, control de acceso y trazabilidad de la información.</p>
+                    <p class="text-gray-600">
+                        Autenticación, control de acceso y trazabilidad de la información.
+                    </p>
                 </div>
             </div>
 
@@ -228,7 +242,9 @@
                 <i data-lucide="leaf" class="h-8 w-8 text-lime-500"></i>
                 <div>
                     <h3 class="text-2xl font-bold text-gray-800 mb-2">Sostenibilidad</h3>
-                    <p class="text-gray-600">Equipos eficientes y políticas inteligentes para reducir la huella de carbono.</p>
+                    <p class="text-gray-600">
+                        Equipos eficientes y políticas inteligentes para reducir la huella de carbono.
+                    </p>
                 </div>
             </div>
 
@@ -241,11 +257,15 @@
     <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
 
         <div class="lg:w-1/2">
-            <img src="https://i.postimg.cc/NfSwPKjk/487094689-684597497409854-2985743454668687314-n.webp" class="w-full" alt="Soluciones tecnológicas">
+            <img src="https://i.postimg.cc/NfSwPKjk/487094689-684597497409854-2985743454668687314-n.webp"
+                 class="w-full rounded-2xl shadow-lg"
+                 alt="Soluciones tecnológicas">
         </div>
 
         <div class="lg:w-1/2">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Descubre nuestras soluciones tecnológicas</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Descubre nuestras soluciones tecnológicas
+            </h2>
 
             <div class="space-y-6">
                 <div class="flex space-x-4 items-center">
@@ -284,35 +304,36 @@
              class="bg-white p-10 rounded-2xl shadow-xl max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
 
             <div class="md:w-1/2">
-                <img id="marca-image" src="" 
-                     class="max-h-80 mx-auto transition-opacity duration-500">
+                <img id="marca-image" src=""
+                     class="max-h-80 mx-auto transition-opacity duration-500"
+                     alt="Marca aliada">
             </div>
 
             <div class="md:w-1/2 text-left flex flex-col">
-                <h3 id="marca-title" class="text-4xl font-bold mb-3"></h3>
-                <p id="marca-description" class="text-gray-600 mb-6 flex-grow"></p>
+                <h3 id="marca-title" class="text-3xl md:text-4xl font-bold mb-3"></h3>
+                <p id="marca-description" class="text-gray-600 mb-6 flex-grow text-sm md:text-base"></p>
 
                 <a id="marca-link" href="#" target="_blank"
-                   class="bg-lime-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-lime-600 text-center mt-auto">
+                   class="bg-lime-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-lime-600 text-center mt-auto text-sm md:text-base">
                     Conoce más de la marca
                 </a>
             </div>
 
         </div>
 
-        <!-- SOLO BOTONES DE MARCAS (los buenos, no los feos) -->
+        <!-- SOLO BOTONES DE MARCAS (sin cuadros azules extra) -->
         <div id="marcas-buttons" class="mt-8 flex justify-center gap-4 flex-wrap">
 
             <button data-index="0" class="marca-button bg-white p-4 rounded-lg shadow-md hover:shadow-xl">
-                <img src="https://i.postimg.cc/Y0Vt0pGg/ricoh-logo.png" class="h-10">
+                <img src="https://i.postimg.cc/Y0Vt0pGg/ricoh-logo.png" class="h-10" alt="Ricoh">
             </button>
 
             <button data-index="1" class="marca-button bg-white p-4 rounded-lg shadow-md hover:shadow-xl">
-                <img src="https://i.postimg.cc/tJ0M4pXb/lexmark-logo.png" class="h-10">
+                <img src="https://i.postimg.cc/tJ0M4pXb/lexmark-logo.png" class="h-10" alt="Lexmark">
             </button>
 
             <button data-index="2" class="marca-button bg-white p-4 rounded-lg shadow-md hover:shadow-xl">
-                <img src="https://i.postimg.cc/W12FkM0K/kyocera-logo.png" class="h-10">
+                <img src="https://i.postimg.cc/W12FkM0K/kyocera-logo.png" class="h-10" alt="Kyocera">
             </button>
 
         </div>
@@ -323,7 +344,7 @@
 <!-- RESULTADOS -->
 <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-6 text-center">
-        <h2 class="text-4xl font-bold mb-12">Resultados que Hablan por Sí Mismos</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-12">Resultados que Hablan por Sí Mismos</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
@@ -355,8 +376,8 @@
 <section class="py-20 bg-white">
     <div class="container mx-auto px-6 max-w-5xl">
         <div class="text-center mb-10">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Aporte a la Comunidad</h2>
-            <p class="text-lg text-gray-600">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Aporte a la Comunidad</h2>
+            <p class="text-base md:text-lg text-gray-600">
                 En Copiermaster C&G creemos que la tecnología también debe servir para transformar realidades.
                 Por eso apoyamos a emprendedores locales, instituciones educativas y proyectos sociales
                 con soluciones de impresión, automatización y presencia digital.
@@ -392,12 +413,12 @@
 
         <div>
             <img src="https://i.postimg.cc/6qRNQd57/468963711-3994290450845859-6671631898219414239-n-removebg-preview.webp"
-                 class="h-36 mb-4" alt="Copiermaster C&G">
+                 class="h-24 md:h-32 mb-4" alt="Copiermaster C&G">
         </div>
 
         <div>
             <h4 class="text-lg font-bold mb-4">Marcas</h4>
-            <ul class="space-y-2">
+            <ul class="space-y-2 text-sm md:text-base">
                 <li><a href="nosotros.html#marcas" class="hover:text-lime-500">Nuestras Marcas</a></li>
                 <li><a href="soluciones.html" class="hover:text-lime-500">Equipos</a></li>
             </ul>
@@ -405,15 +426,15 @@
 
         <div>
             <h4 class="text-lg font-bold mb-4">Bot&Landing</h4>
-            <ul class="space-y-2">
-                <li><a href="https://botandlanding.crisslombeida.com/" class="hover:text-lime-500">Páginas Web</a></li>
+            <ul class="space-y-2 text-sm md:text-base">
+                <li><a href="https://botandlanding.crisslombeida.com/" target="_blank" rel="noopener noreferrer" class="hover:text-lime-500">Páginas Web</a></li>
                 <li><a href="soluciones.html" class="hover:text-lime-500">Soluciones</a></li>
             </ul>
         </div>
 
         <div>
             <h4 class="text-lg font-bold mb-4">Legal</h4>
-            <ul class="space-y-2">
+            <ul class="space-y-2 text-sm md:text-base">
                 <li><a href="#" class="hover:text-lime-500">Política de Calidad</a></li>
                 <li><a href="#" class="hover:text-lime-500">Privacidad</a></li>
                 <li><a href="#" class="hover:text-lime-500">Términos</a></li>
@@ -437,12 +458,12 @@
     </button>
 
     <div id="chat-window"
-         class="hidden absolute bottom-20 right-0 bg-white rounded-2xl shadow-2xl flex flex-col">
+         class="hidden absolute bottom-20 right-0 bg-white rounded-2xl shadow-2xl flex flex-col w-80 max-w-[90vw]">
 
         <div class="bg-teal-500 text-white p-4 rounded-t-2xl flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <img src="https://placehold.co/40x40/ffffff/333333?text=P" class="rounded-full" alt="Criss">
-                <h3 class="font-bold">Criss</h3>
+                <h3 class="font-bold text-sm md:text-base">Criss</h3>
             </div>
             <button id="close-chat" class="text-white">
                 <i data-lucide="x"></i>
@@ -482,8 +503,19 @@
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('hero-video-player', {
             videoId: 'PwFWg96_Omk',
-            playerVars: { autoplay: 1, controls: 0, mute: 1, loop: 0, playlist: 'PwFWg96_Omk', start: 0, end: 110 },
-            events: { onReady: e => e.target.playVideo(), onStateChange }
+            playerVars: {
+                autoplay: 1,
+                controls: 0,
+                mute: 1,
+                loop: 0,
+                playlist: 'PwFWg96_Omk',
+                start: 0,
+                end: 110
+            },
+            events: {
+                onReady: e => e.target.playVideo(),
+                onStateChange: onStateChange
+            }
         });
     }
     function onStateChange(e) {
@@ -491,8 +523,11 @@
     }
 
     /* MENÚ */
-    document.getElementById('menu-button').onclick = () =>
-        document.getElementById('mobile-menu').classList.toggle('hidden');
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuButton && mobileMenu) {
+        menuButton.onclick = () => mobileMenu.classList.toggle('hidden');
+    }
 
     /* HERO TEXT SLIDER */
     const heroTitle = document.getElementById('hero-title');
@@ -507,6 +542,8 @@
 
     let heroIndex = 0;
     function updateHero() {
+        if (!heroTitle || !heroSubtitle) return;
+
         heroTitle.style.opacity = 0;
         heroSubtitle.style.opacity = 0;
 
@@ -517,7 +554,9 @@
             heroSubtitle.style.opacity = 1;
 
             heroButtons.forEach(b => b.classList.remove('hero-button-active'));
-            heroButtons[heroIndex].classList.add('hero-button-active');
+            if (heroButtons[heroIndex]) {
+                heroButtons[heroIndex].classList.add('hero-button-active');
+            }
         }, 300);
     }
     updateHero();
@@ -561,22 +600,27 @@
     let marcaIndex = 0;
 
     function updateMarca() {
+        if (!marcaImage || !marcaTitle || !marcaDesc || !marcaLink) return;
+
         marcaImage.style.opacity = 0;
         marcaTitle.style.opacity = 0;
         marcaDesc.style.opacity  = 0;
 
         setTimeout(() => {
-            marcaImage.src = marcas[marcaIndex].img;
-            marcaTitle.textContent = marcas[marcaIndex].title;
-            marcaDesc.textContent  = marcas[marcaIndex].desc;
-            marcaLink.href = marcas[marcaIndex].url;
+            const data = marcas[marcaIndex];
+            marcaImage.src = data.img;
+            marcaTitle.textContent = data.title;
+            marcaDesc.textContent  = data.desc;
+            marcaLink.href = data.url;
 
             marcaImage.style.opacity = 1;
             marcaTitle.style.opacity = 1;
             marcaDesc.style.opacity  = 1;
 
             marcaButtons.forEach(b => b.classList.remove('marca-button-active'));
-            marcaButtons[marcaIndex].classList.add('marca-button-active');
+            if (marcaButtons[marcaIndex]) {
+                marcaButtons[marcaIndex].classList.add('marca-button-active');
+            }
         }, 300);
     }
     updateMarca();
@@ -595,22 +639,26 @@
     const chatWindow = document.getElementById('chat-window');
     const closeChatBtn = document.getElementById('close-chat');
 
-    chatBubble.onclick = () => {
-        chatWindow.classList.remove('hidden');
-        chatBubble.classList.add('hidden');
-    };
+    if (chatBubble && chatWindow && closeChatBtn) {
+        chatBubble.onclick = () => {
+            chatWindow.classList.remove('hidden');
+            chatBubble.classList.add('hidden');
+        };
 
-    closeChatBtn.onclick = () => {
-        chatWindow.classList.add('hidden');
-        chatBubble.classList.remove('hidden');
-    };
+        closeChatBtn.onclick = () => {
+            chatWindow.classList.add('hidden');
+            chatBubble.classList.remove('hidden');
+        };
+    }
 
     setTimeout(async () => {
         try {
             await Tone.start();
             new Tone.Synth().toDestination().triggerAttackRelease("E5","8n");
         } catch {}
-        chatWidget.classList.remove('opacity-0','translate-y-4');
+        if (chatWidget) {
+            chatWidget.classList.remove('opacity-0','translate-y-4');
+        }
     }, 3000);
 
     lucide.createIcons();
